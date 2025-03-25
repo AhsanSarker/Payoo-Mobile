@@ -30,13 +30,14 @@ document
 
     //
     const AccountNumber = document.getElementById("account-number").value;
+
     if (AccountNumber.length === 11) {
       if (convertpin === 1234) {
         console.log("ok add kora jaba");
         const sum = convertmainbalance + convertAmount;
         console.log(sum);
-        const mainbalance = (document.getElementById("main-balance").innerText =sum); //sum taka add korlam
-        
+        const mainbalance = (document.getElementById("main-balance").innerText =
+          sum); //sum taka add korlam
       } else {
         // console.log('pin thik nai')
         alert("pin thik nai");

@@ -1,10 +1,10 @@
-document.getElementById('cash-out').style.display="none";
+document.getElementById('cashout').style.display="none";
 
-document.getElementById('addM').addEventListener('click',function(){
-    document.getElementById('cash-out').style.display="none";
-    document.getElementById('add-money').style.display="block";
+document.getElementById('add-moneybox').addEventListener('click',function(){
+    document.getElementById('cashout').style.display="none";
+    document.getElementById('addmoney').style.display="block";
 })
-document.getElementById('cashO').addEventListener('click',function(){
-    document.getElementById('cash-out').style.display="block";
-    document.getElementById('add-money').style.display="none";
+document.getElementById('cash-outbox').addEventListener('click',function(){
+    document.getElementById('cashout').style.display="block";
+    document.getElementById('addmoney').style.display="none";
 })

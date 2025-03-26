@@ -1,5 +1,5 @@
 document
-  .getElementById("btncaseout-money")
+  .getElementById("btncashout-money")
   .addEventListener("click", function (event) {
     event.preventDefault();
 
@@ -16,7 +16,7 @@ document
         // console.log('ok add kora jaba')
        const sub=convertmainbalance-convertAmount;
     //    console.log(sum);
-    const mainbalance=document.getElementById('main-balance').innerText = sub; //sum taka add korlam
+   document.getElementById('main-balance').innerText = sub; //sum taka add korlam
     }
     else{
         // console.log('wrong pin')

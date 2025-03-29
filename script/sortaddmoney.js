@@ -6,22 +6,30 @@ document
     const Pin = getInputvalueByID("pin");
     const Accountnumber = document.getElementById("account-number").value;
     const Mainbalance = getInnerTextById("main-balance");
-    
-    if (Accountnumber .length === 11) {
+
+    if (Accountnumber.length === 11) {
       if (Pin === 1234) {
-        
-        const sum =  Mainbalance + Amount;
-      
+        const sum = Mainbalance + Amount;
+
         // document.getElementById("main-balance").innerText = sum; //sum taka add korlam
-        
-        setInnerTetByIdandValue("main-balance",sum)
-      }
-       else {
+
+        setInnerTetByIdandValue("main-balance", sum);
+
+        //  ?????????????????????????????????????????????????????
+        const container = document.getElementById("transcation-container");
+
+        const p = document.createElement("p");
+        p.innerText = `
+       added ${Amount} from this ${Accountnumber} account number
+       `;
+       container.appendChild(p)
+
+
+      } else {
         // console.log('pin thik nai')
         alert("pin thik nai");
       }
-    } 
-    else {
+    } else {
       // console.log('need valid account number')
       alert("need valid account number");
     }

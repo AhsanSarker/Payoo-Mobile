@@ -12,3 +12,7 @@ function getInnerTextById(id){
 function setInnerTetByIdandValue(id,value){
   document.getElementById(id).innerText=value;
 }
+
+function handtoggle(id, status) {
+  document.getElementById(id).style.display = status;
+}
